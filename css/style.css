@@ -193,6 +193,8 @@
     }
     .goods-row-product {
         width: 33.3%;
+        display: flex;
+        flex-direction: column;
     }
     .goods {
         padding: 0 15px 65px;
@@ -561,9 +563,9 @@ form {
 .goods-info {
     border: 3px solid #d3c59d;
     padding: 55px 20px 25px;
-    min-height: 280px;
     position: relative;
     top: -30px;
+    flex-grow: 1;
 }
 .old-prise {
     font-size: 14px;

@@ -561,6 +561,7 @@ form {
 .goods-info {
     border: 3px solid #d3c59d;
     padding: 55px 20px 25px;
+    min-height: 280px;
     position: relative;
     top: -30px;
 }

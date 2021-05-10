@@ -21,7 +21,7 @@
 @media (min-width: 641px) and (max-width: 1200px) {
     .header {
         padding: 50px 35px 125px;
-    } 
+    }
     .header-logo {
         width: 157px;
         height: 28px;
@@ -35,7 +35,7 @@
         flex-wrap: wrap;
     }
     .layout-trend {
-        width: 49.65%;
+        width: calc(50% - 2px);
     }
     .layout-trend:nth-child(odd) {
         margin-right: 2px;
@@ -180,7 +180,8 @@
         display: flex;
     }
     .post-img {
-        width: 381px;
+        min-width: 381px;
+        width: 100%;
     }
     .post-info {
         margin-left: 30px;
@@ -414,10 +415,13 @@
 }
 .post-name-row {
     font-size: 14px;
-    color: #0f0d0e;
-    text-decoration: none;
+    line-height: 18px;
     text-transform: uppercase;
     font-weight: 600;
+}
+.post-name-row a {
+    color: #0f0d0e;
+    text-decoration: none;
 }
 form {
     position: relative;
@@ -659,6 +663,11 @@ form {
     color: #999999;
     text-align: center;
     margin-top: 75px;
+    font-weight: 600;
+}
+.copyright a {
+    color: #999999;
+    text-decoration: none;
 }
 .popup_hidden {
     display: none !important;
